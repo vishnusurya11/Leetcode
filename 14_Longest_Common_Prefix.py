@@ -4,7 +4,7 @@ class Solution:
             return ''
         longest_common_prefix = strs[0]
         common_prefix = ''
-        for word_in_list in strs[1:]:
+        for word_in_list in strs:
             if len(longest_common_prefix) >= len(word_in_list):
                 small_word = word_in_list
                 big_word = longest_common_prefix
